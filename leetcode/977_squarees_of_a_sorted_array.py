@@ -1,0 +1,9 @@
+# Time Complexity - O(n log n)
+# Space Complexity - O(n)
+
+class Solution:
+    def sortedSquares(self, nums: List[int]) -> List[int]:
+        for i in range(0,len(nums)):
+            nums[i] = nums[i]*nums[i]
+
+        return sorted(nums)
